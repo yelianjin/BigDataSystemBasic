@@ -2,9 +2,10 @@ from Config import Config
 
 
 class Logger:
-    def __init__(self, name):
+    def __init__(self, name, debug=Config.DEBUG):
         self.name = name
+        self.debug = debug
 
     def log(self, event):
-        if Config.DEBUG:
+        if self.debug:
             print("[%10s]: %s" % (self.name, event))
