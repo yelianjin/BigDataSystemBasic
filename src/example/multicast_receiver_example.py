@@ -22,7 +22,7 @@ def receiver():
     # The address for the multicast group is the third param
     status = sock.setsockopt(socket.IPPROTO_IP,
                              socket.IP_ADD_MEMBERSHIP,
-                             socket.inet_aton(MYGROUP) + socket.inet_aton(SENDERIP));
+                             socket.inet_aton(MYGROUP) + socket.inet_aton(SENDERIP))
 
     sock.setblocking(0)
     # ts = time.time()

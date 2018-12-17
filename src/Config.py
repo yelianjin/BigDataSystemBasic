@@ -10,4 +10,4 @@ class Config(object):
 # 不同节点配置，派生基类
 class DealerConfig(Config):
     LISTEN_SOCKET = ("0.0.0.0", 23456)
-
+    MULTICAST_GROUP = '224.1.1.1'

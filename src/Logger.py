@@ -1,5 +1,6 @@
 from Config import Config
 
+
 class Logger:
     def __init__(self, name):
         self.name = name
